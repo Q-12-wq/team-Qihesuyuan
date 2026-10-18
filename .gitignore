@@ -1,0 +1,35 @@
+# Keil 构建产物
+MDK-ARM/ps2_fixed/
+MDK-ARM/ps2/
+Objects/
+Listings/
+*.o
+*.d
+*.crf
+*.axf
+*.hex
+*.map
+*.lnp
+*.lst
+*.htm
+*.dep
+*.sct
+*.build_log.htm
+
+# Keil / 用户界面布局
+# ⚠️ 注意：*.uvoptx 不要忽略！里面存着 ST-Link 驱动与 Flash 烧录算法
+#    （UL2CM3 / ST-LINKIII-KEIL_SWO / STM32F10x_128.FLM），
+#    删了它 Keil 就没有烧录配置，表现为"能编译但不能烧录"。
+*.uvguix.*
+JLinkLog.txt
+JLinkSettings.ini
+
+# CubeMX
+.mxproject
+*.ioc
+
+# 编辑器
+.vscode/
+.idea/
+*.bak
+*~
